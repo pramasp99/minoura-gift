@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>For You</title>
+  <style>
+    body {margin:0;display:flex;justify-content:center;align-items:center;height:100vh;background:#111;color:#fff;font-family:Arial, sans-serif;cursor:pointer;}
+    #msg{opacity:0;transition:opacity 1s;font-size:1.6rem;text-align:center;padding:20px;}
+    #open{font-size:1.2rem;}
+  </style>
+</head>
+<body>
+  <div id="open">touch to see</div>
+  <div id="msg">i love u more minoura amablèthra</div>
+  <script>
+    const open=document.getElementById('open');
+    const msg=document.getElementById('msg');
+    document.body.addEventListener('click',()=>{
+      open.style.display='none';
+      msg.style.opacity='1';
+    },{once:true});
+  </script>
+</body>
+</html>
